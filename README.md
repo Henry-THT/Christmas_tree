@@ -58,6 +58,32 @@ This project is a fun and interactive Christmas tree animation using **Pygame**.
 
 ---
 
+## Code Design Philosophy
+
+### Overall Approach
+The primary goal was to create an engaging and visually appealing Christmas-themed animation. The project combines dynamic object behaviors, creative use of geometric patterns, and color/brightness effects for an immersive festive scene.
+
+### Lights
+- Lights are positioned in a spiral pattern to simulate the wrapping of a string of lights around the tree. 
+- **Dynamic Behavior**: Colors and brightness are randomized over time for a lively effect.
+
+### Snowflakes
+- A simple gravity-based motion system ensures that snowflakes fall naturally.
+- Snowflakes respawn at random positions once they exit the screen, maintaining a continuous snowfall effect.
+
+### Stars
+- Stars were designed to twinkle using a gradual brightness transition for a realistic effect.
+- Instead of simple circular stars, a five-pointed polygon was used to mimic the appearance of real stars.
+
+### Top Star
+- The glowing star at the top of the tree was achieved using concentric circles with varying opacity.
+- This layered approach provides a soft, radiant glow.
+
+### Modular Design
+Each element (tree, lights, stars, snowflakes) is encapsulated into separate functions or classes, allowing for easy extension or modification.
+
+---
+
 ## Example Output
 The animation showcases a colorful Christmas tree, twinkling stars, and falling snow.
 
